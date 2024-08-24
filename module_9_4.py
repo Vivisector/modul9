@@ -52,5 +52,5 @@ class MysticBall:
 
 # first_ball = MysticBall(['Да', 'Нет', 'Наверное'])
 first_ball = MysticBall(['Да', 'Нет', 'Наверное', 'Даже и не думай'])
-for i in range(4):
+for _ in range(4):
     print(first_ball())
