@@ -18,11 +18,10 @@ def is_prime(func):
         res_tmp = func(*args)
         # str = f'Число {res_tmp}: простое'
         str = f'простое\n{res_tmp}'
-        for i in range(2, res_tmp + 1):
-            if i < int(res_tmp ** 0.5) + 1:
-                if res_tmp % i == 0:
-                    str = f'составное\n{res_tmp}'
-                    break
+        for i in range(2, int(res_tmp ** 0.5) + 1):
+            if res_tmp % i == 0:
+                str = f'составное\n{res_tmp}'
+                break
         return str
 
     return wrapper
